@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Header'
 import { useState } from 'react';
+import Properties from './Props';
 
 
 function App() {
@@ -18,6 +19,17 @@ function App() {
     setColor('red')
   }
 
+  
+  const [start,end]=useState(0)
+
+  const Sum=()=>{
+    end(start+1)
+  }
+  const dec=()=>{
+    end(start-1)
+  }
+
+
   return (
     <div className="App">
       <Header/>
@@ -26,7 +38,19 @@ function App() {
       <h1 onClick={()=> Doubleclick('baxter')}>onbdouble</h1>
 
       <h1>shirt color {color}</h1>
+      <button onClick={dec}>-</button>
       <button onClick={Change}>change color</button>
+      <button onClick={Sum}>+</button>
+      <h1>increment {start}</h1>
+
+      <Properties name={'kerala'}/>
+      <Properties name={'tamilnadu'}/>
+      <Properties name={'karnadaka'}/>
+
+
+
+
+
       
     </div>
   );
