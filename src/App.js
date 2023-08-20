@@ -17,11 +17,17 @@ function App() {
     }
   }
 
+  let Another=false;
+
+
+
 
   return (
     <div className="App">
       <Header/>
       <Condition one={0}/>
+
+      {Another ? <h1>possitive</h1> : <h2>negative</h2>}
 
 
 
