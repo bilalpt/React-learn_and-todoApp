@@ -1,6 +1,7 @@
 import './App.css';
 import Header from './Header'
 // import { useState } from 'react';
+import Main from './components/Main';
 
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
       <Condition one={0}/>
 
       {Another ? <h1>possitive</h1> : <h2>negative</h2>}
+
+      <Main one={false}/>
 
 
 
