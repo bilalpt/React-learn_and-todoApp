@@ -1,9 +1,10 @@
 import React from 'react'
 
-const Properties = (props) => {
+const Properties = ({name,population}) => {
   return (
     <div>
-        <h1>{props.name}</h1>
+        <h1>{name}{population}</h1>
+        
       
     </div>
   )
