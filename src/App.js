@@ -20,9 +20,9 @@ function App() {
 
   let Another=false;
 
-  let Keydata=[{id:1,brand:'Dell',price:20000},
-              {id:2,brand:'Lenovo',price:30000},
-              {id:3,brand:'Dell',price:20000}]
+  let Keydata=[{id:1,brand:'Dell',price:20000,qty:1},
+              {id:2,brand:'Lenovo',price:30000,qty:1},
+              {id:3,brand:'Dell',price:20000,qty:1}]
 
 
   const [products,setuser] = useState(Keydata);
@@ -49,10 +49,10 @@ function App() {
 
       <Main one={false}/>
       {products.map((product)=>(
-        <div>
+        <div style={{backgroundColor:'blue', marginLeft:'500px',marginRight:'500px'}}>
         <h1>{product.brand}</h1>
         <h2>{product.brand}</h2>
-        <h3>{product.id}</h3>
+        <h3>{product.qty}</h3>
 
        <button onClick={()=>Keyfun(product.id)}>+</button>
 
